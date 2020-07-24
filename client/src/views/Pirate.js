@@ -36,14 +36,14 @@ export default function Pirate({ id }) {
                 <h3>About</h3>
                 <p>Positon: {pirate.position}</p>
                 <p>Treasure Chests: {pirate.treasureChests}</p>
-                <p>Peg Leg: {pirate.pegLeg ? "Yarrr" : "No matey" }
-                    <input type="checkbox" checked={pirate.pegLeg} onChange={() => updatePirate("pegLeg") }/>
+                <p>Peg Leg: {' '}
+                    <button type="button" onClick={() => updatePirate("pegLeg") }>{pirate.pegLeg ? "Yarrrr" : "No matey"}</button>
                 </p>
-                <p>Eye Patch: {pirate.eyePatch ? "Yarrr" : "No matey" }
-                    <input type="checkbox" checked={pirate.eyePatch} onChange={() => updatePirate("eyePatch") }/>
+                <p>Eye Patch: {' '}
+                    <button type="button" onClick={() => updatePirate("eyePatch") }>{pirate.eyePatch ? "Yarrrr" : "No matey"}</button>
                 </p>
-                <p>Hook Hand: {pirate.hook ? "Yarrr" : "No matey" }
-                    <input type="checkbox" checked={pirate.hook} onChange={() => updatePirate("hook") }/>
+                <p>Hook Hand: {' '}
+                    <button type="button" onClick={() => updatePirate("hook") }>{pirate.hook ? "Yarrrr" : "No matey"}</button>
                 </p>
             </div>
         </div>
